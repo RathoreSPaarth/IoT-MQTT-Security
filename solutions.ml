@@ -58,4 +58,5 @@ my_list =
 match lst with
 | Empty -> Empty
 (* | Node(x, Empty) -> Node(x, Empty) *)
-| Node(x, rest) -> insert_sorted cmp x (my_sort cmp rest)(** 
+| Node(x, rest) -> insert_sorted cmp x (my_sort cmp rest)
+
