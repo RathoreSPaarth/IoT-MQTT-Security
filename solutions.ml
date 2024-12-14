@@ -27,7 +27,9 @@ my_list) : 'a my_list =
 match lst with
 | Empty -> Node(x, Empty)
 | Node(y, rest) -> if cmp x y < 0 then Node(x, Node(y,
-rest)) else(** QUESTION 6: Implement my_sort [4 marks]
+rest)) else Node(y, insert_sorted cmp x rest)
+
+(** QUESTION 6: Implement my_sort [4 marks]
 This function sorts a list in ascending order using a
 comparison function
 Input:
